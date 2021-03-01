@@ -46,6 +46,36 @@
 .main_container {
   display: flex;
 }
+
+.main__form {
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.main__form > input {
+  /* border-radius: 5px;
+  padding-top: 5px; */
+  flex: 1;
+  display: flex;
+}
+
+.main__form > button {
+  /* border-radius: 0px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  /* background: red; */
+}
+
+.main__form_title_container {
+  display: flex;
+}
+
 .labels {
   /* background: green; */
   display: flex;
