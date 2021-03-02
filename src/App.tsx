@@ -1,9 +1,32 @@
-import React from 'react';
+import React, {MouseEvent, ReactHTMLElement, ChangeEvent} from 'react';
+
 import './App.css';
 import mockup from './mockup.png';
 import ps from './ps.png'
 
-export default class App extends React.Component{
+interface Props {
+  defaultEmail?:string
+}
+interface State {
+  email?:string
+}
+
+export default class App extends React.Component<Props, State>{
+  constructor(props: Props){
+    super(props);
+    this.state = {email:this.props.defaultEmail}
+   
+  }
+
+  handleSubmit = (event:MouseEvent) => {
+    alert('Le nom a été soumis : ' + this.state.email);
+    event.preventDefault();
+  }
+
+  handleChange = (event:ChangeEvent<HTMLInputElement>) => {
+    this.setState({email:event.target.value})
+  }
+
   render(){
   return (
     <div className="App">
@@ -25,8 +48,8 @@ export default class App extends React.Component{
                       <h3>Inscrivez-vous pour plus d'informations</h3>
                   </div>
                   <div>
-                    <input type="text" placeholder='Enter votre email'/>
-                    <button>Souscrire</button>
+                    <input onChange={this.handleChange} type="text" placeholder='Enter votre email'/>
+                    <button onClick={this.handleSubmit}>Souscrire</button>
                   </div>  
                  
                 </div>
