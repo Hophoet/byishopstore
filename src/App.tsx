@@ -3,6 +3,7 @@ import React, {MouseEvent, ReactHTMLElement, ChangeEvent} from 'react';
 import './App.css';
 import mockup from './mockup.png';
 import ps from './ps.png'
+import {subscribe} from './api/functions'
 
 interface Props {
   defaultEmail?:string
@@ -19,7 +20,15 @@ export default class App extends React.Component<Props, State>{
   }
 
   handleSubmit = (event:MouseEvent) => {
-    alert('Le nom a été soumis : ' + this.state.email);
+    subscribe(this.state.email)
+    .then(response => {
+      alert("Merci pour votre subscription\nVous serez informé sur l'evolution du projet");
+
+    })
+    .catch(error => {
+      alert('error'+error);
+      
+    })
     event.preventDefault();
   }
 
