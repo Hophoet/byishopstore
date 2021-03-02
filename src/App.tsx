@@ -3,7 +3,8 @@ import './App.css';
 import mockup from './mockup.png';
 import ps from './ps.png'
 
-function App() {
+export default class App extends React.Component{
+  render(){
   return (
     <div className="App">
      
@@ -39,6 +40,6 @@ function App() {
         </div>
     </div>
   );
+  }
 }
 
-export default App;
