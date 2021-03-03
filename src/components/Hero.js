@@ -1,7 +1,7 @@
 import React from "react";
 
-import rectangle_1 from '../assets/Rectangle_1(.png';
-import rectangle_2 from '../assets/Rectangle_2.png'; 
+import rectangle_1 from '../assets/Rectangle1.png';
+import rectangle_2 from '../assets/Rectangle2.png'; 
 
 
 const Hero = ({appType, tagLine, description, mainActionText, extraActionText}) => {
