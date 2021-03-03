@@ -6,10 +6,11 @@ import Step from './components/Step';
 import BottomLead from './components/BottomLead';
 import Footer from './components/Footer';
 
-import logo from "./assets/log.png";
+import logo from "./assets/lo.png";
 import Rectangle_3 from './assets/Rectangle_3.png';
 import Rectangle_4 from './assets/Rectangle_4.png';
 import Rectangle_5 from './assets/Rectangle_5.png';
+import Rectangle_6 from './assets/Rectangle_6.png';
 
 
 function App() {
@@ -41,6 +42,13 @@ function App() {
       description: "Lorsque vous avez terminé, vérifiez et faites-le livrer en toute simplicité.",
       img: Rectangle_5,
       alternate: false,
+    },
+    step4: {
+      title: 'Livraison',
+      heading: "Votre commande vous sérez livrer facilement.",
+      description: "Votre commande vous sérez livrer facilement avec un système simple et sécurisé",
+      img: Rectangle_6,
+      alternate: true,
     },
     bottomLead: {
       actionText: "Téléchargez l'application maintenant.",
@@ -89,6 +97,13 @@ function App() {
           description={data.step3.description}
           img={data.step3.img}
           alternate={data.step3.alternate}
+          />
+          <Step
+          title={data.step4.title}
+          heading={data.step4.heading}
+          description={data.step4.description}
+          img={data.step4.img}
+          alternate={data.step4.alternate}
           />
           
           <BottomLead 
