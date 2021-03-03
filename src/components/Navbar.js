@@ -28,7 +28,7 @@ const Navbar = ({logo}) => {
   useOutsideAlerter(wrapperRef, setOpenNav);
 
   return (
-    <div className="flex flex-row items-center justify-between h-28">
+    <div className="flex flex-row items-center justify-between h-20">
       <a href="/" className="pl-7 logo lg:ml-10">
         <img height="65%" width="65%" src={logo} alt="logo" />
       </a>
@@ -54,8 +54,8 @@ const Navbar = ({logo}) => {
           {/* Desktop Nav */}
 
           <div className="flex justify-around w-2/5 mr-12 lg:visible sm:invisible">
-              <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Decouvrir</a>
-              <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Comment ça marche</a>
+              <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-blue-500">Decouvrir</a>
+              <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-blue-500">Comment ça marche</a>
           </div>
 
     </div>
