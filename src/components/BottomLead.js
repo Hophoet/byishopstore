@@ -6,11 +6,13 @@ const BottomLead = ({actionText, description, mainActionText, extraActionText}) 
       <p className="p-5 text-5xl font-bold leading-normal text-center text-black lg:text-4xl lg:pt-10">{actionText}</p>
       <p className="pl-12 pr-12 text-xl leading-8 text-center text-gray-400 lg:text-gray-400 lg:font-medium">{description}</p>
       <div className="flex flex-col flex-wrap items-center justify-center w-full h-48 pt-5 lg:flex-row lg:pt-1">
-        <button
+        <a
           className="pt-3 pb-3 pl-8 pr-8 mt-3 text-2xl font-semibold text-center text-white transition-all bg-black shadow-2xl lg:mt-0 rounded-xl hover:bg-white hover:text-black focus:outline-none  "
+          target='_blank'
+          href='https://play.google.com/store/apps/details?id=com.byi'
         >
           {mainActionText}
-        </button>
+        </a>
         {/* <button
           className="pt-3 pb-3 pl-8 pr-8 mt-8 text-2xl font-semibold text-center text-white transition-all shadow-2xl lg:ml-5 lg:mt-0 rounded-xl hover:text-orange-500 hover:bg-gray-50 focus:outline-none ring-2 ring-gray-300 "
         >
