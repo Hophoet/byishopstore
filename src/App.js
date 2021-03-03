@@ -30,8 +30,8 @@ function App() {
     },
     step2: {
       title: 'Explorer en faisant du shopping',
-      heading: 'Shop for your favorites meal as e dey hot.',
-      description: 'Shop for your favorite meals or drinks and enjoy while doing it.',
+      heading: 'Achetez votre articles préféré.',
+      description: 'Achetez vos articles préférés de ami(e)s.',
       img: Rectangle_4,
       alternate: true,
     },
