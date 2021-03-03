@@ -12,6 +12,15 @@
   margin: 0px;
 }
 
+.logo_container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.logo {
+  width: 100px;
+}
+
 .App {
   background-color: white;
   /* height: 100vh; */
@@ -20,6 +29,7 @@
 .playstore {
   width: 200px;
 }
+
 .nav {
   display: flex;
   /* background: white; */
@@ -109,7 +119,7 @@
     margin: 0px;
   }
   .App {
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .nav {
     display: flex;
@@ -172,7 +182,7 @@
     margin: 0px;
   }
   .App {
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 100vh;
   }
   .nav {
