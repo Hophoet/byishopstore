@@ -44,10 +44,8 @@ const Navbar = ({logo}) => {
               <div ref={wrapperRef} className="absolute top-0 w-full h-48 bg-white">
                 <div onClick={()=>setOpenNav(false)} className="absolute right-12 top-9"><img height="30" width="30" src={close_icon} alt="" /></div>
                 <div className="flex flex-col items-center justify-around h-full pt-5">
-                  <a onClick={()=>setOpenNav(false)} href="/" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
-                  <a onClick={()=>setOpenNav(false)} href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Product</a>
-                  <a onClick={()=>setOpenNav(false)} href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Faq</a>
-                  <a onClick={()=>setOpenNav(false)} href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
+                  <a onClick={()=>setOpenNav(false)} href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Decouvrir</a>
+                  <a onClick={()=>setOpenNav(false)} href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Comment ça marche</a>
                 </div>
               </div>
           }
@@ -56,10 +54,8 @@ const Navbar = ({logo}) => {
           {/* Desktop Nav */}
 
           <div className="flex justify-around w-2/5 mr-12 lg:visible sm:invisible">
-              <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
               <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Decouvrir</a>
               <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Comment ça marche</a>
-              <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contactez-nous</a>
           </div>
 
     </div>
