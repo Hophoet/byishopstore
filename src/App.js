@@ -17,8 +17,8 @@ function App() {
   const data = {
     hero:{
       appType: "application d'achat et de vente",
-      tagLine: 'Pourquoi garder vos vetements plus utilisé quand vous pouvez les vendres à vos amis sur Byishop',
-      description: "Téléchargez dès maintenant l'application  ByiShop sur",
+      tagLine: 'Pourquoi garder vos vetements plus utilisés quand vous pouvez les vendre sur Byishop ?',
+      description: "Byishop Bientot disponible sur",
       mainActionText: 'Playstore',
       extraActionText: 'App Store',
     },
@@ -51,8 +51,8 @@ function App() {
       alternate: true,
     },
     bottomLead: {
-      actionText: "Téléchargez l'application maintenant.",
-      description: "Disponible sur votre application de telechargement d'applications préférée. Commencez votre expérience maintenant.",
+      actionText: "Téléchargez l'application",
+      description: "Bientot Disponible sur ",
       mainActionText: 'Playstore',
       extraActionText: 'App Store',
     },
